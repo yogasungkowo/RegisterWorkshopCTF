@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    @if ($registered === true)
+    @if ($registered)
         <div class="container">
             <div class="card">
                 <h1 class="text-success">Registration Successful</h1>
@@ -23,7 +23,8 @@
         <div class="wrapper">
             <form action="/register" method="POST">
                 @csrf
-                <h1>Registrasi Workshop <br> CTF CSC UMSU 2024</h1>
+                <h2>Workshop</h2>
+                <h1 class="sub-title">Cyber Security and Exploitation:<br>From Web to Binaries<br><span class="sub-text">With Telkom Indonesia and FIKTI UMSU</span></h1>
                 <div class="input-box">
                     <div class="input-field"><input name="name" type="text" required placeholder="Nama Lengkap"
                             value="{{ old('name') }}"><i class='bx bxs-user'></i></div>
