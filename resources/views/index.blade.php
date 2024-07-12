@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="/style/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Form Registration</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    @if ($registered)
+    @if ($registered === true)
         <div class="container">
             <div class="card">
                 <h1 class="text-success">Registration Successful</h1>
@@ -63,6 +64,16 @@
             </form>
         </div>
     @endif
+
+    <div class="mainCss">
+        <div class="dotsCss">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="/js/script.js"></script>
 </body>
 
 </html>
